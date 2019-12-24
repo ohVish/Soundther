@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"strconv"
 	"time"
 
 	"fyne.io/fyne"
@@ -33,6 +34,7 @@ var logo *canvas.Image
 var tab *widget.TabContainer
 var filename string
 var search string
+var duration int
 
 func setResource(file string, name string) *fyne.StaticResource {
 	i, err := os.Open(file)
@@ -101,10 +103,14 @@ func confirmAudio() {
 func uploadAudio() fyne.Widget {
 	nombre := widget.NewEntry()
 	nombre.SetText("audio")
+	duracion := widget.NewEntry()
+	duracion.SetText("2")
 	form := widget.Form{OnSubmit: func() {
 		filename = nombre.Text
+		duration, _ = strconv.Atoi(duracion.Text)
 	}}
 	form.Append("Nombre del fichero:", nombre)
+	form.Append("Duracion", duracion)
 
 	return widget.NewVBox(
 		widget.NewHBox(layout.NewSpacer(), logo, layout.NewSpacer()),
@@ -137,7 +143,7 @@ func uploadAudio() fyne.Widget {
 				dir, _ := os.Getwd()
 				a := exec.Command("rec", dir+"/sounds/"+filename+".wav")
 				a.Start()
-				time.Sleep(time.Second * 2)
+				time.Sleep(time.Second * time.Duration(duration))
 				a.Process.Kill()
 				bar.Stop()
 				emerg.Close()
@@ -254,6 +260,7 @@ func initUI(index int) {
 
 func main() {
 	filename = "audio"
+	duration = 2
 	os.Setenv("FYNE_THEME", "light")
 	os.Setenv("FYNE_SCALE", "1.0")
 	// Recursos de la  aplicación
