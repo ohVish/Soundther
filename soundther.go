@@ -109,6 +109,8 @@ func confirmAudio() {
 					log.Println(stderr.String())
 					emerg = a.NewWindow("Error")
 					emerg.SetContent(widget.NewLabel("La transacción no se ha podido realizar."))
+					initUI(0)
+					win.Show()
 					emerg.Show()
 
 				} else {
@@ -134,11 +136,10 @@ func confirmAudio() {
 					emerg.Close()
 					emerg := a.NewWindow("Transacción realizada.")
 					emerg.SetContent(widget.NewLabel("La transacción se ha realizado correctamente."))
+					initUI(0)
+					win.Show()
 					emerg.Show()
-
 				}
-				win.Show()
-				initUI(0)
 
 			})),
 	)
