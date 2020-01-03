@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
@@ -38,9 +39,9 @@ var usuarios []User
 var audios []Contract
 var walletLogin string
 var walletBuy string
+var prize string
 
 // Variables globales de uso común en todo el programa para la GUI.
-var config, icon *fyne.StaticResource
 var a fyne.App
 var win fyne.Window
 var logo *canvas.Image
@@ -49,6 +50,7 @@ var filename string
 var search string
 var duration int
 var play string
+var directory string
 
 func setResource(file string, name string) *fyne.StaticResource {
 	i, err := os.Open(file)
@@ -76,8 +78,7 @@ func confirmAudio() {
 			emerg.Resize(fyne.NewSize(500, 100))
 			win.Hide()
 			emerg.Show()
-			dir, _ := os.Getwd()
-			a := exec.Command("play", dir+"/sounds/"+filename+".wav")
+			a := exec.Command("play", directory+"/sounds/"+filename+".wav")
 			a.Run()
 			bar.Stop()
 			emerg.Close()
@@ -97,12 +98,11 @@ func confirmAudio() {
 				emerg.Resize(fyne.NewSize(500, 100))
 				win.Hide()
 				emerg.Show()
-				dir, _ := os.Getwd()
-				file := dir + "/sounds/" + filename + ".wav"
-				worker := exec.Command("python3", "deploy.py", walletLogin, "20", file)
+				file := directory + "/sounds/" + filename + ".wav"
+				worker := exec.Command("python3", "deploy.py", walletLogin, prize, file)
 				var stderr bytes.Buffer
 				worker.Stderr = &stderr
-				worker.Dir = dir + "/blockchain/"
+				worker.Dir = directory + "/blockchain/"
 				bytes, err := worker.Output()
 				if err != nil {
 					emerg.Close()
@@ -123,7 +123,8 @@ func confirmAudio() {
 					}
 					wallet := string(bytes)
 					args := strings.Split(wallet, "\n")
-					audios = append(audios, Contract{Title: filename, Wallet: args[0], Price: 20, Type: args[1]})
+					precio, _ := strconv.Atoi(prize)
+					audios = append(audios, Contract{Title: filename, Wallet: args[0], Price: precio, Type: args[1]})
 					//Guardamos los cambios en el json.
 					jsonfile, err = json.Marshal(audios)
 					if err != nil {
@@ -149,17 +150,20 @@ func uploadAudio() fyne.Widget {
 	nombre.SetText("audio")
 	duracion := widget.NewEntry()
 	duracion.SetText("2")
+	dinero := widget.NewEntry()
+	dinero.SetText("20")
 	form := widget.Form{OnSubmit: func() {
 		filename = nombre.Text
 		duration, _ = strconv.Atoi(duracion.Text)
+		prize = dinero.Text
 	}}
 	form.Append("Nombre del fichero:", nombre)
 	form.Append("Duracion(Solo para grabar)", duracion)
+	form.Append("Precio:", dinero)
 
 	//Sacar el balance de la cuenta
-	dir, _ := os.Getwd()
 	worker := exec.Command("python3", "balanceCuenta.py", walletLogin)
-	worker.Dir = dir + "/blockchain/"
+	worker.Dir = directory + "/blockchain/"
 	balance, err := worker.Output()
 	if err != nil {
 		log.Println(err)
@@ -175,8 +179,7 @@ func uploadAudio() fyne.Widget {
 			initUI(1)
 		}), layout.NewSpacer(),
 			widget.NewButtonWithIcon("Subir", theme.ContentAddIcon(), func() {
-				dir, _ := os.Getwd()
-				_, err := os.Stat(dir + "/sounds/" + filename + ".wav")
+				_, err := os.Stat(directory + "/sounds/" + filename + ".wav")
 				if err == nil {
 					confirmAudio()
 				} else {
@@ -194,8 +197,7 @@ func uploadAudio() fyne.Widget {
 				emerg.Resize(fyne.NewSize(500, 100))
 				win.Hide()
 				emerg.Show()
-				dir, _ := os.Getwd()
-				a := exec.Command("rec", dir+"/sounds/"+filename+".wav")
+				a := exec.Command("rec", directory+"/sounds/"+filename+".wav")
 				a.Start()
 				time.Sleep(time.Second * time.Duration(duration))
 				a.Process.Kill()
@@ -236,10 +238,14 @@ func makeTransaction() fyne.CanvasObject {
 			}
 		}
 		if !find {
-			dir, _ := os.Getwd()
-			worker := exec.Command("python3", dir+"/blockchain/nuevaCuenta.py")
+			var stderr bytes.Buffer
+			worker := exec.Command("python3", directory+"/blockchain/nuevaCuenta.py")
+			worker.Stderr = &stderr
 			wallet, err := worker.Output()
 			if err != nil {
+				b := a.NewWindow("a")
+				b.SetContent(widget.NewLabel(stderr.String()))
+				b.Show()
 				log.Println(err)
 			}
 			walletLogin = string(wallet[0 : len(wallet)-1])
@@ -284,9 +290,8 @@ func listTransactions() fyne.CanvasObject {
 	}))
 
 	//Sacar el balance de la cuenta
-	dir, _ := os.Getwd()
 	worker := exec.Command("python3", "balanceCuenta.py", walletLogin)
-	worker.Dir = dir + "/blockchain/"
+	worker.Dir = directory + "/blockchain/"
 	balance, err := worker.Output()
 	if err != nil {
 		log.Println(err)
@@ -317,9 +322,8 @@ func listTransactions() fyne.CanvasObject {
 				if search != "" {
 					search = strings.Split(search, ".")[1]
 					search = strings.Split(search, "|")[0]
-					dir, _ = os.Getwd()
-					worker := exec.Command("python3", "comprar.py", audios[index].Wallet, walletLogin, dir+"/sounds/download/"+search+".wav", audios[index].Type)
-					worker.Dir = dir + "/blockchain/"
+					worker := exec.Command("python3", "comprar.py", audios[index].Wallet, walletLogin, directory+"/sounds/download/"+search+".wav", audios[index].Type)
+					worker.Dir = directory + "/blockchain/"
 					err := worker.Run()
 					if err != nil {
 						initUI(0)
@@ -376,8 +380,7 @@ func acceptTransaction() fyne.CanvasObject {
 			}
 		}
 		if !find {
-			dir, _ := os.Getwd()
-			worker := exec.Command("python3", dir+"/blockchain/nuevaCuenta.py")
+			worker := exec.Command("python3", directory+"/blockchain/nuevaCuenta.py")
 			wallet, err := worker.Output()
 			if err != nil {
 				log.Println(err)
@@ -415,9 +418,8 @@ func firstView() fyne.CanvasObject {
 	)
 }
 func playView() fyne.CanvasObject {
-	dir, _ := os.Getwd()
 	worker := exec.Command("ls")
-	worker.Dir = dir + "/sounds/download/"
+	worker.Dir = directory + "/sounds/download/"
 	files, _ := worker.Output()
 	list := strings.Split(string(files), "\n")
 	group := widget.NewGroupWithScroller("Selecciona el audio:", widget.NewSelect(list, func(name string) {
@@ -437,8 +439,7 @@ func playView() fyne.CanvasObject {
 			emerg.Resize(fyne.NewSize(500, 100))
 			win.Hide()
 			emerg.Show()
-			dir, _ := os.Getwd()
-			a := exec.Command("play", dir+"/sounds/download/"+play)
+			a := exec.Command("play", directory+"/sounds/download/"+play)
 			a.Run()
 			bar.Stop()
 			emerg.Close()
@@ -457,16 +458,21 @@ func initUI(index int) {
 }
 
 func main() {
+
+	ex, _ := os.Executable()
+	dirToFile := filepath.Dir(ex)
+	os.Chdir(dirToFile)
+	os.Chdir("../Resources/")
+	directory, _ = os.Getwd()
 	filename = "audio"
 	duration = 2
+	prize = "20"
 	os.Setenv("FYNE_THEME", "light")
 	os.Setenv("FYNE_SCALE", "1.0")
 	// Recursos de la  aplicación
-	icon = setResource("./icon.png", "icon")
-	config = setResource("./config.png", "config")
+	icon := setResource("./icon.png", "icon")
 	logo = canvas.NewImageFromResource(icon)
 	logo.SetMinSize(fyne.NewSize(200, 200))
-
 	a = app.New()
 	win = a.NewWindow("Principal")
 	win.SetTitle("Soundther")
