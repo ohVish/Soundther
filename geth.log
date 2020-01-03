@@ -1,0 +1,809 @@
+WARN [01-03|10:13:25.442] Sanitizing cache to Go's GC limits       provided=4096 updated=2730
+DEBUG[01-03|10:13:25.444] Sanitizing Go's GC trigger               percent=37
+INFO [01-03|10:13:25.448] Maximum peer count                       ETH=50 LES=0 total=50
+DEBUG[01-03|10:13:25.449] FS scan times                            list=155.42µs set=3.788µs diff=4.067µs
+TRACE[01-03|10:13:25.450] Started watching keystore folder         path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore
+TRACE[01-03|10:13:26.393] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-13-25.478030000Z--369e44d2968010cb7d2e3d93751b8b2e89e5f281.tmp891569083
+DEBUG[01-03|10:13:26.393] FS scan times                            list=228.192µs set=104.778µs diff=1.324µs
+DEBUG[01-03|10:13:27.686] FS scan times                            list=188.508µs set=24.174µs  diff=3.348µs
+TRACE[01-03|10:13:27.686] Handled keystore changes                 time=136.518µs
+INFO [01-03|10:13:27.925] Using developer account                  address=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281
+INFO [01-03|10:13:27.925] Starting peer-to-peer node               instance=Geth/v1.9.9-stable/darwin-amd64/go1.13.4
+INFO [01-03|10:13:27.928] Allocated trie memory caches             clean=682.00MiB dirty=682.00MiB
+INFO [01-03|10:13:27.929] Allocated cache and file handles         database=/Users/josemiguelaragonjurado/Soundther/testNet/geth/chaindata cache=1.33GiB handles=5120
+DEBUG[01-03|10:13:28.076] Chain freezer table opened               database=/Users/josemiguelaragonjurado/Soundther/testNet/geth/chaindata/ancient table=headers items=0 size=0.00B
+DEBUG[01-03|10:13:28.086] Chain freezer table opened               database=/Users/josemiguelaragonjurado/Soundther/testNet/geth/chaindata/ancient table=hashes  items=0 size=0.00B
+DEBUG[01-03|10:13:28.095] Chain freezer table opened               database=/Users/josemiguelaragonjurado/Soundther/testNet/geth/chaindata/ancient table=bodies  items=0 size=0.00B
+DEBUG[01-03|10:13:28.105] Chain freezer table opened               database=/Users/josemiguelaragonjurado/Soundther/testNet/geth/chaindata/ancient table=receipts items=0 size=0.00B
+DEBUG[01-03|10:13:28.113] Chain freezer table opened               database=/Users/josemiguelaragonjurado/Soundther/testNet/geth/chaindata/ancient table=diffs    items=0 size=0.00B
+INFO [01-03|10:13:28.113] Opened ancient database                  database=/Users/josemiguelaragonjurado/Soundther/testNet/geth/chaindata/ancient
+DEBUG[01-03|10:13:28.113] Current full block hash unavailable 
+INFO [01-03|10:13:28.114] Writing custom genesis block 
+INFO [01-03|10:13:28.115] Persisted trie from memory database      nodes=12 size=1.75KiB time=313.656µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [01-03|10:13:28.116] Initialised chain configuration          config="{ChainID: 1337 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: 0, Muir Glacier: <nil>, Engine: clique}"
+INFO [01-03|10:13:28.116] Initialising Ethereum protocol           versions="[64 63]" network=2000 dbversion=<nil>
+WARN [01-03|10:13:28.116] Upgrade blockchain database version      from=<nil> to=7
+INFO [01-03|10:13:28.118] Loaded most recent local header          number=0 hash=101886…38fc40 td=1 age=50y8mo3w
+INFO [01-03|10:13:28.118] Loaded most recent local full block      number=0 hash=101886…38fc40 td=1 age=50y8mo3w
+INFO [01-03|10:13:28.118] Loaded most recent local fast block      number=0 hash=101886…38fc40 td=1 age=50y8mo3w
+DEBUG[01-03|10:13:28.119] Reinjecting stale transactions           count=0
+INFO [01-03|10:13:28.119] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [01-03|10:13:28.987] Allocated fast sync bloom                size=1.33GiB
+INFO [01-03|10:13:28.987] Initialized fast sync bloom              items=12 errorrate=0.000 elapsed=65.366µs
+DEBUG[01-03|10:13:28.988] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [01-03|10:13:28.991] Stored checkpoint snapshot to disk       number=0 hash=101886…38fc40
+INFO [01-03|10:13:29.013] started whisper v.6.0 
+DEBUG[01-03|10:13:29.014] TCP listener up                          addr=[::]:62362
+DEBUG[01-03|10:13:29.014] InProc registered                        namespace=admin
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=admin
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=debug
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=web3
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=txpool
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=debug
+INFO [01-03|10:13:29.015] New local node record                    seq=1 id=9d8ee48cbab5296a ip=127.0.0.1 udp=0 tcp=62362
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=debug
+INFO [01-03|10:13:29.015] Started P2P networking                   self="enode://00e5392dbf3eaa7d42c4c1850409efa9d1f2fb0391883059aa5efca4e1309b19ff9852b7422f8efa7af18e1593daf35a362f32b1a104c572f381f3a0cc2f8138@127.0.0.1:62362?discport=0"
+DEBUG[01-03|10:13:29.015] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=personal
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=clique
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=miner
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=eth
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=admin
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=debug
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=debug
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=net
+DEBUG[01-03|10:13:29.016] InProc registered                        namespace=shh
+DEBUG[01-03|10:13:29.016] IPC registered                           namespace=admin
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=admin
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=debug
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=web3
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=txpool
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=debug
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=debug
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=personal
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=clique
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=miner
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=eth
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=admin
+DEBUG[01-03|10:13:29.017] IPC registered                           namespace=debug
+DEBUG[01-03|10:13:29.018] IPC registered                           namespace=debug
+DEBUG[01-03|10:13:29.018] IPC registered                           namespace=net
+DEBUG[01-03|10:13:29.018] IPC registered                           namespace=shh
+INFO [01-03|10:13:29.018] IPC endpoint opened                      url=/Users/josemiguelaragonjurado/Soundther/testNet/geth.ipc
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=web3
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=personal
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=eth
+DEBUG[01-03|10:13:29.018] HTTP registered                          namespace=net
+INFO [01-03|10:13:29.019] HTTP endpoint opened                     url=http://127.0.0.1:8545 cors=* vhosts=localhost
+INFO [01-03|10:13:29.019] Transaction pool price threshold updated price=1000000000
+INFO [01-03|10:13:29.020] Transaction pool price threshold updated price=1
+INFO [01-03|10:13:29.020] Etherbase automatically configured       address=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281
+INFO [01-03|10:13:29.020] Commit new mining work                   number=1 sealhash=fc96e0…c334cc uncles=0 txs=0 gas=0 fees=0 elapsed=107.631µs
+INFO [01-03|10:13:29.020] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:13:29.096] Served rpc_modules                       reqid=1 t=61.46µs
+TRACE[01-03|10:13:29.096] Handled RPC response                     reqid=1 t=1.082µs
+DEBUG[01-03|10:13:29.104] Served web3_clientVersion                reqid=2 t=24.913µs
+TRACE[01-03|10:13:29.104] Handled RPC response                     reqid=2 t=638ns
+DEBUG[01-03|10:13:29.104] Served eth_coinbase                      reqid=3 t=30.72µs
+TRACE[01-03|10:13:29.104] Handled RPC response                     reqid=3 t=804ns
+DEBUG[01-03|10:13:29.104] Served eth_blockNumber                   reqid=4 t=37.951µs
+TRACE[01-03|10:13:29.104] Handled RPC response                     reqid=4 t=589ns
+DEBUG[01-03|10:13:29.105] Served eth_blockNumber                   reqid=5 t=13.848µs
+TRACE[01-03|10:13:29.105] Handled RPC response                     reqid=5 t=550ns
+DEBUG[01-03|10:13:29.107] Served eth_getBlockByNumber              reqid=6 t=744.432µs
+TRACE[01-03|10:13:29.107] Handled RPC response                     reqid=6 t=1.646µs
+DEBUG[01-03|10:13:29.110] Served admin_datadir                     reqid=7 t=36.936µs
+TRACE[01-03|10:13:29.110] Handled RPC response                     reqid=7 t=1.06µs
+DEBUG[01-03|10:13:29.110] Served rpc_modules                       reqid=8 t=45.074µs
+TRACE[01-03|10:13:29.111] Handled RPC response                     reqid=8 t=879ns
+INFO [01-03|10:13:31.191] Mapped network port                      proto=tcp extport=62362 intport=62362 interface="UPNP IGDv1-IP1"
+DEBUG[01-03|10:13:48.989] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:13:55.736] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-13-54.203108000Z--a9a79ad07fd9eea70fa8c030b31a83f9465a24dc.tmp286965214
+DEBUG[01-03|10:13:55.736] FS scan times                            list=162.399µs set=632.491µs diff=2.796µs
+INFO [01-03|10:13:55.995] Your new key was generated               address=0xa9a79ad07FD9EeA70fa8C030B31A83f9465A24dc
+WARN [01-03|10:13:55.996] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-13-54.203108000Z--a9a79ad07fd9eea70fa8c030b31a83f9465a24dc
+WARN [01-03|10:13:55.996] Please remember your password! 
+DEBUG[01-03|10:13:55.996] Served personal_newAccount               conn=127.0.0.1:62371 reqid=0 t=1.795065675s
+DEBUG[01-03|10:13:56.025] Served eth_coinbase                      conn=127.0.0.1:62371 reqid=1 t=32.223µs
+DEBUG[01-03|10:13:56.046] Executing EVM call finished              runtime=7.176183ms
+DEBUG[01-03|10:13:56.048] Executing EVM call finished              runtime=142.066µs
+DEBUG[01-03|10:13:56.048] Executing EVM call finished              runtime=103.198µs
+DEBUG[01-03|10:13:56.048] Executing EVM call finished              runtime=107.438µs
+DEBUG[01-03|10:13:56.048] Executing EVM call finished              runtime=127.916µs
+DEBUG[01-03|10:13:56.048] Executing EVM call finished              runtime=167.992µs
+DEBUG[01-03|10:13:56.049] Executing EVM call finished              runtime=168.032µs
+DEBUG[01-03|10:13:56.049] Executing EVM call finished              runtime=173.666µs
+DEBUG[01-03|10:13:56.049] Executing EVM call finished              runtime=163.87µs
+DEBUG[01-03|10:13:56.049] Executing EVM call finished              runtime=137.243µs
+DEBUG[01-03|10:13:56.049] Executing EVM call finished              runtime=125.639µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=115.895µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=100.151µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=97.332µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=118.736µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=100.134µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=110.407µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=96.177µs
+DEBUG[01-03|10:13:56.050] Executing EVM call finished              runtime=114.703µs
+DEBUG[01-03|10:13:56.051] Executing EVM call finished              runtime=99.412µs
+DEBUG[01-03|10:13:56.051] Executing EVM call finished              runtime=89.289µs
+DEBUG[01-03|10:13:56.051] Executing EVM call finished              runtime=91.253µs
+TRACE[01-03|10:13:56.051] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:13:56.508] FS scan times                            list=134.182µs set=6.849µs   diff=3.143µs
+TRACE[01-03|10:13:56.508] Handled keystore changes                 time=56.666µs
+INFO [01-03|10:13:56.996] Setting new local account                address=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281
+TRACE[01-03|10:13:56.996] Pooled new future transaction            hash=f60d26…bef613 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0xa9a79ad07FD9EeA70fa8C030B31A83f9465A24dc
+TRACE[01-03|10:13:56.998] Promoting queued transaction             hash=f60d26…bef613
+TRACE[01-03|10:13:56.998] Broadcast transaction                    hash=f60d26…bef613 recipients=0
+INFO [01-03|10:13:56.998] Submitted transaction                    fullhash=0xf60d26b450fb468c8472bb73f85efffe3469d434cc8b0bfb8d80d68241bef613 recipient=0xa9a79ad07FD9EeA70fa8C030B31A83f9465A24dc
+DEBUG[01-03|10:13:57.000] Served personal_sendTransaction          conn=127.0.0.1:62371 reqid=2 t=967.512516ms
+TRACE[01-03|10:13:57.001] Waiting for slot to sign and propagate   delay=-1.001s
+INFO [01-03|10:13:57.002] Commit new mining work                   number=1 sealhash=33b8bd…5f88ec uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=4.158ms
+INFO [01-03|10:13:57.006] Successfully sealed new block            number=1 sealhash=33b8bd…5f88ec hash=d6212e…ba7158 elapsed=5.253ms
+DEBUG[01-03|10:13:57.006] Reinjecting stale transactions           count=0
+TRACE[01-03|10:13:57.006] Removed old pending transaction          hash=f60d26…bef613
+INFO [01-03|10:13:57.006] 🔨 mined potential block                  number=1 hash=d6212e…ba7158
+TRACE[01-03|10:13:57.007] Propagated block                         hash=d6212e…ba7158 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:13:57.007] Announced block                          hash=d6212e…ba7158 recipients=0 duration=2562047h47m16.854s
+INFO [01-03|10:13:57.007] Commit new mining work                   number=2 sealhash=137e6c…fc0e91 uncles=0 txs=0 gas=0      fees=0       elapsed=1.276ms
+INFO [01-03|10:13:57.007] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:14:08.996] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:14:28.119] Current full block not old enough        number=1 hash=d6212e…ba7158 delay=90000
+DEBUG[01-03|10:14:29.001] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:14:49.005] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:15:08.361] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-15-07.022057000Z--25b6f450e4ee6a3a7e271f006e9d15bc7ab0a4fc.tmp041948069
+DEBUG[01-03|10:15:08.362] FS scan times                            list=160.771µs set=944.744µs diff=4.135µs
+INFO [01-03|10:15:08.453] Your new key was generated               address=0x25b6f450e4eE6a3A7e271f006e9d15bC7aB0A4Fc
+WARN [01-03|10:15:08.453] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-15-07.022057000Z--25b6f450e4ee6a3a7e271f006e9d15bc7ab0a4fc
+WARN [01-03|10:15:08.453] Please remember your password! 
+DEBUG[01-03|10:15:08.454] Served personal_newAccount               conn=127.0.0.1:62378 reqid=0 t=1.432218667s
+DEBUG[01-03|10:15:08.477] Served eth_coinbase                      conn=127.0.0.1:62378 reqid=1 t=26.334µs
+DEBUG[01-03|10:15:08.485] Executing EVM call finished              runtime=189.004µs
+DEBUG[01-03|10:15:08.485] Executing EVM call finished              runtime=87.554µs
+DEBUG[01-03|10:15:08.485] Executing EVM call finished              runtime=85.172µs
+DEBUG[01-03|10:15:08.485] Executing EVM call finished              runtime=67.487µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=79.177µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=73.212µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=130.306µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=81.226µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=69.306µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=64.151µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=76.959µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=69.504µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=62.109µs
+DEBUG[01-03|10:15:08.486] Executing EVM call finished              runtime=64.495µs
+DEBUG[01-03|10:15:08.488] Executing EVM call finished              runtime=1.978964ms
+DEBUG[01-03|10:15:08.489] Executing EVM call finished              runtime=91.037µs
+DEBUG[01-03|10:15:08.489] Executing EVM call finished              runtime=68.912µs
+DEBUG[01-03|10:15:08.489] Executing EVM call finished              runtime=84.908µs
+DEBUG[01-03|10:15:08.489] Executing EVM call finished              runtime=66.37µs
+DEBUG[01-03|10:15:08.490] Executing EVM call finished              runtime=1.525963ms
+DEBUG[01-03|10:15:08.491] Executing EVM call finished              runtime=120.788µs
+DEBUG[01-03|10:15:08.491] Executing EVM call finished              runtime=104.403µs
+TRACE[01-03|10:15:08.491] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:15:08.966] FS scan times                            list=171.13µs  set=8.424µs   diff=3.77µs
+TRACE[01-03|10:15:08.966] Handled keystore changes                 time=62.173µs
+DEBUG[01-03|10:15:09.010] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:15:09.352] Pooled new future transaction            hash=7de21d…208cee from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0x25b6f450e4eE6a3A7e271f006e9d15bC7aB0A4Fc
+TRACE[01-03|10:15:09.352] Promoting queued transaction             hash=7de21d…208cee
+TRACE[01-03|10:15:09.352] Broadcast transaction                    hash=7de21d…208cee recipients=0
+INFO [01-03|10:15:09.353] Submitted transaction                    fullhash=0x7de21d2c2007c9c58a1873bed65f6c912169266f3583446f636b64a96a208cee recipient=0x25b6f450e4eE6a3A7e271f006e9d15bC7aB0A4Fc
+DEBUG[01-03|10:15:09.353] Served personal_sendTransaction          conn=127.0.0.1:62378 reqid=2 t=869.191241ms
+TRACE[01-03|10:15:09.353] Waiting for slot to sign and propagate   delay=-353.264ms
+INFO [01-03|10:15:09.353] Commit new mining work                   number=2 sealhash=d9ab29…aefe32 uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=403.074µs
+INFO [01-03|10:15:09.356] Successfully sealed new block            number=2 sealhash=d9ab29…aefe32 hash=4eb33c…dfe292 elapsed=2.929ms
+INFO [01-03|10:15:09.356] 🔨 mined potential block                  number=2 hash=4eb33c…dfe292
+TRACE[01-03|10:15:09.356] Propagated block                         hash=4eb33c…dfe292 recipients=0 duration=2562047h47m16.854s
+DEBUG[01-03|10:15:09.356] Reinjecting stale transactions           count=0
+TRACE[01-03|10:15:09.356] Announced block                          hash=4eb33c…dfe292 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:15:09.356] Removed old pending transaction          hash=7de21d…208cee
+INFO [01-03|10:15:09.356] Commit new mining work                   number=3 sealhash=538da1…f17aec uncles=0 txs=0 gas=0      fees=0       elapsed=408.828µs
+INFO [01-03|10:15:09.356] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:15:28.123] Current full block not old enough        number=2 hash=4eb33c…dfe292 delay=90000
+DEBUG[01-03|10:15:29.015] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:15:32.390] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-15-31.084068000Z--d186e5ba2d3644a8bfb8bd9f52df433d0e210513.tmp340125376
+DEBUG[01-03|10:15:32.390] FS scan times                            list=167.259µs set=69.506µs  diff=3.238µs
+INFO [01-03|10:15:32.470] Your new key was generated               address=0xd186e5ba2d3644a8bfb8bd9f52DF433d0E210513
+WARN [01-03|10:15:32.470] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-15-31.084068000Z--d186e5ba2d3644a8bfb8bd9f52df433d0e210513
+WARN [01-03|10:15:32.470] Please remember your password! 
+DEBUG[01-03|10:15:32.470] Served personal_newAccount               conn=127.0.0.1:62382 reqid=0 t=1.387042878s
+DEBUG[01-03|10:15:32.483] Served eth_coinbase                      conn=127.0.0.1:62382 reqid=1 t=29.238µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=114.45µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=71.347µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=61.061µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=62.889µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=54.795µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=61.686µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=68.099µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=62.533µs
+DEBUG[01-03|10:15:32.490] Executing EVM call finished              runtime=56.861µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=56.022µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=66.77µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=56.579µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=63.757µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=65.464µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=56.298µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=60.54µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=64.095µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=65.796µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=57.242µs
+DEBUG[01-03|10:15:32.491] Executing EVM call finished              runtime=60.349µs
+DEBUG[01-03|10:15:32.492] Executing EVM call finished              runtime=55.609µs
+DEBUG[01-03|10:15:32.492] Executing EVM call finished              runtime=60.541µs
+TRACE[01-03|10:15:32.492] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:15:32.985] FS scan times                            list=287.597µs set=8.584µs   diff=4.053µs
+TRACE[01-03|10:15:32.985] Handled keystore changes                 time=64.315µs
+TRACE[01-03|10:15:33.202] Pooled new future transaction            hash=88c656…3c1786 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0xd186e5ba2d3644a8bfb8bd9f52DF433d0E210513
+TRACE[01-03|10:15:33.202] Promoting queued transaction             hash=88c656…3c1786
+INFO [01-03|10:15:33.202] Submitted transaction                    fullhash=0x88c656933f7757b27b65d6999758a5e5fb025da76bed057881e125ed813c1786 recipient=0xd186e5ba2d3644a8bfb8bd9f52DF433d0E210513
+TRACE[01-03|10:15:33.202] Broadcast transaction                    hash=88c656…3c1786 recipients=0
+DEBUG[01-03|10:15:33.202] Served personal_sendTransaction          conn=127.0.0.1:62382 reqid=2 t=712.942391ms
+INFO [01-03|10:15:33.202] Commit new mining work                   number=3 sealhash=609853…b5b78b uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=237.601µs
+TRACE[01-03|10:15:33.203] Waiting for slot to sign and propagate   delay=-202.935ms
+INFO [01-03|10:15:33.203] Successfully sealed new block            number=3 sealhash=609853…b5b78b hash=5a42b8…ef4828 elapsed=610.144µs
+INFO [01-03|10:15:33.203] 🔨 mined potential block                  number=3 hash=5a42b8…ef4828
+TRACE[01-03|10:15:33.203] Propagated block                         hash=5a42b8…ef4828 recipients=0 duration=2562047h47m16.854s
+DEBUG[01-03|10:15:33.203] Reinjecting stale transactions           count=0
+TRACE[01-03|10:15:33.203] Announced block                          hash=5a42b8…ef4828 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:15:33.203] Removed old pending transaction          hash=88c656…3c1786
+INFO [01-03|10:15:33.203] Commit new mining work                   number=4 sealhash=cf055f…395e01 uncles=0 txs=0 gas=0      fees=0       elapsed=427.747µs
+INFO [01-03|10:15:33.203] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:15:49.019] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:16:09.024] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:16:28.130] Current full block not old enough        number=3 hash=5a42b8…ef4828 delay=90000
+DEBUG[01-03|10:16:29.025] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:16:31.328] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-16-29.876463000Z--aa0113dd056facacb816ea12788ffbaec6cc17e1.tmp335834399
+DEBUG[01-03|10:16:31.328] FS scan times                            list=269.597µs set=66.508µs  diff=3.495µs
+INFO [01-03|10:16:31.443] Your new key was generated               address=0xaA0113DD056FAcACb816eA12788FfbaEC6cc17E1
+WARN [01-03|10:16:31.443] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-16-29.876463000Z--aa0113dd056facacb816ea12788ffbaec6cc17e1
+WARN [01-03|10:16:31.443] Please remember your password! 
+DEBUG[01-03|10:16:31.443] Served personal_newAccount               conn=127.0.0.1:62389 reqid=0 t=1.567621562s
+DEBUG[01-03|10:16:31.461] Served eth_coinbase                      conn=127.0.0.1:62389 reqid=1 t=24.337µs
+DEBUG[01-03|10:16:31.468] Executing EVM call finished              runtime=127.894µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=71.897µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=71.634µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=91.175µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=68.704µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=66.697µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=74.074µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=67.165µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=63.073µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=71.142µs
+DEBUG[01-03|10:16:31.469] Executing EVM call finished              runtime=60.956µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=66.373µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=76.861µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=62.293µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=57.81µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=59.626µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=59.66µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=83.901µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=58.355µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=84.333µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=56.292µs
+DEBUG[01-03|10:16:31.470] Executing EVM call finished              runtime=63.365µs
+TRACE[01-03|10:16:31.470] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:16:31.958] FS scan times                            list=197.149µs set=8.89µs    diff=4.45µs
+TRACE[01-03|10:16:31.958] Handled keystore changes                 time=60.976µs
+TRACE[01-03|10:16:32.213] Pooled new future transaction            hash=aee4e3…a6caa1 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0xaA0113DD056FAcACb816eA12788FfbaEC6cc17E1
+TRACE[01-03|10:16:32.213] Promoting queued transaction             hash=aee4e3…a6caa1
+TRACE[01-03|10:16:32.213] Broadcast transaction                    hash=aee4e3…a6caa1 recipients=0
+INFO [01-03|10:16:32.213] Submitted transaction                    fullhash=0xaee4e32fb50439464a572687ba6e4a2b1dd76c99a508f3a6bd0f2453b8a6caa1 recipient=0xaA0113DD056FAcACb816eA12788FfbaEC6cc17E1
+DEBUG[01-03|10:16:32.213] Served personal_sendTransaction          conn=127.0.0.1:62389 reqid=2 t=745.483641ms
+INFO [01-03|10:16:32.213] Commit new mining work                   number=4 sealhash=74e2db…a523b6 uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=313.762µs
+TRACE[01-03|10:16:32.214] Waiting for slot to sign and propagate   delay=-214.038ms
+INFO [01-03|10:16:32.215] Successfully sealed new block            number=4 sealhash=74e2db…a523b6 hash=cb11ee…285d54 elapsed=1.274ms
+INFO [01-03|10:16:32.215] 🔨 mined potential block                  number=4 hash=cb11ee…285d54
+DEBUG[01-03|10:16:32.215] Reinjecting stale transactions           count=0
+TRACE[01-03|10:16:32.215] Propagated block                         hash=cb11ee…285d54 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:16:32.215] Removed old pending transaction          hash=aee4e3…a6caa1
+TRACE[01-03|10:16:32.215] Announced block                          hash=cb11ee…285d54 recipients=0 duration=2562047h47m16.854s
+INFO [01-03|10:16:32.215] Commit new mining work                   number=5 sealhash=43a720…6c186d uncles=0 txs=0 gas=0      fees=0       elapsed=457.356µs
+INFO [01-03|10:16:32.215] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:16:49.029] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:17:01.413] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-17-00.097434000Z--f23aeafd7dd338f8f0b7a623cdfddc6477cdd549.tmp888423410
+DEBUG[01-03|10:17:01.413] FS scan times                            list=179.831µs set=140.65µs  diff=3.855µs
+INFO [01-03|10:17:01.493] Your new key was generated               address=0xF23AEAFD7DD338f8F0b7A623CDfDdc6477CDd549
+WARN [01-03|10:17:01.494] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-17-00.097434000Z--f23aeafd7dd338f8f0b7a623cdfddc6477cdd549
+WARN [01-03|10:17:01.494] Please remember your password! 
+DEBUG[01-03|10:17:01.494] Served personal_newAccount               conn=127.0.0.1:62393 reqid=0 t=1.396882213s
+DEBUG[01-03|10:17:01.506] Served eth_coinbase                      conn=127.0.0.1:62393 reqid=1 t=22.953µs
+DEBUG[01-03|10:17:01.512] Executing EVM call finished              runtime=116.534µs
+DEBUG[01-03|10:17:01.512] Executing EVM call finished              runtime=66.942µs
+DEBUG[01-03|10:17:01.513] Executing EVM call finished              runtime=55.019µs
+DEBUG[01-03|10:17:01.513] Executing EVM call finished              runtime=60.087µs
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=1.903179ms
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=109.833µs
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=91.334µs
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=88.801µs
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=84.824µs
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=77.904µs
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=78.963µs
+DEBUG[01-03|10:17:01.515] Executing EVM call finished              runtime=82.329µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=59.255µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=54.4µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=54.531µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=71.217µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=62.555µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=55.327µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=55.549µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=53.623µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=57.913µs
+DEBUG[01-03|10:17:01.516] Executing EVM call finished              runtime=55.456µs
+TRACE[01-03|10:17:01.516] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:17:02.005] FS scan times                            list=183.362µs set=8.905µs   diff=4.518µs
+TRACE[01-03|10:17:02.005] Handled keystore changes                 time=62.663µs
+TRACE[01-03|10:17:02.218] Pooled new future transaction            hash=116a1c…939362 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0xF23AEAFD7DD338f8F0b7A623CDfDdc6477CDd549
+TRACE[01-03|10:17:02.218] Promoting queued transaction             hash=116a1c…939362
+TRACE[01-03|10:17:02.218] Broadcast transaction                    hash=116a1c…939362 recipients=0
+INFO [01-03|10:17:02.218] Submitted transaction                    fullhash=0x116a1ce635b1bb4616678fa3bc02f1821463b70cd67b4dabad7a204a17939362 recipient=0xF23AEAFD7DD338f8F0b7A623CDfDdc6477CDd549
+DEBUG[01-03|10:17:02.218] Served personal_sendTransaction          conn=127.0.0.1:62393 reqid=2 t=705.933173ms
+INFO [01-03|10:17:02.218] Commit new mining work                   number=5 sealhash=6d3d83…dbae3f uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=257.197µs
+TRACE[01-03|10:17:02.218] Waiting for slot to sign and propagate   delay=-218.577ms
+INFO [01-03|10:17:02.219] Successfully sealed new block            number=5 sealhash=6d3d83…dbae3f hash=a973fb…075bb7 elapsed=536.99µs
+INFO [01-03|10:17:02.219] 🔨 mined potential block                  number=5 hash=a973fb…075bb7
+DEBUG[01-03|10:17:02.219] Reinjecting stale transactions           count=0
+TRACE[01-03|10:17:02.219] Removed old pending transaction          hash=116a1c…939362
+TRACE[01-03|10:17:02.219] Propagated block                         hash=a973fb…075bb7 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:17:02.219] Announced block                          hash=a973fb…075bb7 recipients=0 duration=2562047h47m16.854s
+INFO [01-03|10:17:02.219] Commit new mining work                   number=6 sealhash=74eef8…cbc7df uncles=0 txs=0 gas=0      fees=0       elapsed=583.25µs
+INFO [01-03|10:17:02.219] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:17:09.034] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:17:15.082] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-17-13.848584000Z--bbd5ffa455df504d4fe9acbcaa8e7a4d65a806c6.tmp174782633
+DEBUG[01-03|10:17:15.082] FS scan times                            list=258.877µs set=72.227µs  diff=4.336µs
+INFO [01-03|10:17:15.294] Your new key was generated               address=0xbbD5ffa455DF504d4fE9acbcAa8e7a4d65a806c6
+WARN [01-03|10:17:15.294] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-17-13.848584000Z--bbd5ffa455df504d4fe9acbcaa8e7a4d65a806c6
+WARN [01-03|10:17:15.294] Please remember your password! 
+DEBUG[01-03|10:17:15.294] Served personal_newAccount               conn=127.0.0.1:62396 reqid=0 t=1.446568468s
+DEBUG[01-03|10:17:15.308] Served eth_coinbase                      conn=127.0.0.1:62396 reqid=1 t=26.952µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=126.294µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=61.353µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=58.921µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=58.46µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=50.993µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=53.413µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=63.297µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=56.333µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=77.94µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=79.812µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=51.397µs
+DEBUG[01-03|10:17:15.315] Executing EVM call finished              runtime=50.834µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=50.753µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=52.701µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=53.195µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=53.494µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=52.9µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=53.621µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=53.415µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=51.068µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=52.119µs
+DEBUG[01-03|10:17:15.316] Executing EVM call finished              runtime=52.835µs
+TRACE[01-03|10:17:15.316] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:17:15.808] FS scan times                            list=190.385µs set=10.36µs   diff=4.705µs
+TRACE[01-03|10:17:15.808] Handled keystore changes                 time=61.172µs
+TRACE[01-03|10:17:16.024] Pooled new future transaction            hash=f22779…6c3c7c from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0xbbD5ffa455DF504d4fE9acbcAa8e7a4d65a806c6
+TRACE[01-03|10:17:16.024] Promoting queued transaction             hash=f22779…6c3c7c
+TRACE[01-03|10:17:16.024] Broadcast transaction                    hash=f22779…6c3c7c recipients=0
+INFO [01-03|10:17:16.024] Submitted transaction                    fullhash=0xf227794a0c0b2ac811df99517ff53d43dafa2f43829aaf867d4fad082f6c3c7c recipient=0xbbD5ffa455DF504d4fE9acbcAa8e7a4d65a806c6
+DEBUG[01-03|10:17:16.024] Served personal_sendTransaction          conn=127.0.0.1:62396 reqid=2 t=710.045016ms
+INFO [01-03|10:17:16.024] Commit new mining work                   number=6 sealhash=0898dd…e0a04e uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=268.198µs
+TRACE[01-03|10:17:16.024] Waiting for slot to sign and propagate   delay=-24.819ms
+INFO [01-03|10:17:16.025] Successfully sealed new block            number=6 sealhash=0898dd…e0a04e hash=2e98a3…2de312 elapsed=588.804µs
+INFO [01-03|10:17:16.025] 🔨 mined potential block                  number=6 hash=2e98a3…2de312
+TRACE[01-03|10:17:16.025] Propagated block                         hash=2e98a3…2de312 recipients=0 duration=2562047h47m16.854s
+DEBUG[01-03|10:17:16.025] Reinjecting stale transactions           count=0
+TRACE[01-03|10:17:16.025] Announced block                          hash=2e98a3…2de312 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:17:16.025] Removed old pending transaction          hash=f22779…6c3c7c
+INFO [01-03|10:17:16.025] Commit new mining work                   number=7 sealhash=835a2b…2483af uncles=0 txs=0 gas=0      fees=0       elapsed=403.583µs
+INFO [01-03|10:17:16.025] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:17:28.136] Current full block not old enough        number=6 hash=2e98a3…2de312 delay=90000
+DEBUG[01-03|10:17:29.036] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:17:49.040] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:18:09.042] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:18:28.139] Current full block not old enough        number=6 hash=2e98a3…2de312 delay=90000
+DEBUG[01-03|10:18:29.048] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:18:49.052] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:19:09.058] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:19:28.141] Current full block not old enough        number=6 hash=2e98a3…2de312 delay=90000
+DEBUG[01-03|10:19:29.059] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:19:49.060] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:20:09.061] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:20:28.143] Current full block not old enough        number=6 hash=2e98a3…2de312 delay=90000
+DEBUG[01-03|10:20:29.065] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:20:49.066] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:21:09.069] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:21:28.146] Current full block not old enough        number=6 hash=2e98a3…2de312 delay=90000
+DEBUG[01-03|10:21:29.070] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:21:49.075] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:22:09.077] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:22:16.457] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-22-15.062419000Z--e953e29fc7f397b822f7bf91dc248c17a54e86aa.tmp084903924
+DEBUG[01-03|10:22:16.457] FS scan times                            list=250.39µs  set=82.528µs  diff=5.097µs
+INFO [01-03|10:22:16.673] Your new key was generated               address=0xe953e29Fc7f397b822F7BF91dC248c17A54e86aa
+WARN [01-03|10:22:16.673] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-22-15.062419000Z--e953e29fc7f397b822f7bf91dc248c17a54e86aa
+WARN [01-03|10:22:16.673] Please remember your password! 
+DEBUG[01-03|10:22:16.673] Served personal_newAccount               conn=127.0.0.1:62428 reqid=0 t=1.611308389s
+DEBUG[01-03|10:22:16.691] Served eth_coinbase                      conn=127.0.0.1:62428 reqid=1 t=25.819µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=143.364µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=69.942µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=72.246µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=62.996µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=63.352µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=74.035µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=67.58µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=64.567µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=77.416µs
+DEBUG[01-03|10:22:16.698] Executing EVM call finished              runtime=64.347µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=93.326µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=65.554µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=68.042µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=63.221µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=72.122µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=63.72µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=68.495µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=75.813µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=69.211µs
+DEBUG[01-03|10:22:16.699] Executing EVM call finished              runtime=68.343µs
+DEBUG[01-03|10:22:16.700] Executing EVM call finished              runtime=118.702µs
+DEBUG[01-03|10:22:16.700] Executing EVM call finished              runtime=76.777µs
+TRACE[01-03|10:22:16.700] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:22:17.189] FS scan times                            list=312.342µs set=15.522µs  diff=6.886µs
+TRACE[01-03|10:22:17.189] Handled keystore changes                 time=98.147µs
+TRACE[01-03|10:22:17.449] Pooled new future transaction            hash=c7a240…83ffb2 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0xe953e29Fc7f397b822F7BF91dC248c17A54e86aa
+TRACE[01-03|10:22:17.449] Promoting queued transaction             hash=c7a240…83ffb2
+TRACE[01-03|10:22:17.449] Broadcast transaction                    hash=c7a240…83ffb2 recipients=0
+INFO [01-03|10:22:17.449] Submitted transaction                    fullhash=0xc7a240b9816cf135d8acd53640b8ef83c2cc648b493c572a71e9d4ec7483ffb2 recipient=0xe953e29Fc7f397b822F7BF91dC248c17A54e86aa
+DEBUG[01-03|10:22:17.449] Served personal_sendTransaction          conn=127.0.0.1:62428 reqid=2 t=752.351861ms
+INFO [01-03|10:22:17.450] Commit new mining work                   number=7 sealhash=47081d…61f4c2 uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=564.607µs
+TRACE[01-03|10:22:17.450] Waiting for slot to sign and propagate   delay=-450.222ms
+INFO [01-03|10:22:17.451] Successfully sealed new block            number=7 sealhash=47081d…61f4c2 hash=a636fe…fb55c5 elapsed=1.396ms
+INFO [01-03|10:22:17.451] 🔨 mined potential block                  number=7 hash=a636fe…fb55c5
+TRACE[01-03|10:22:17.451] Propagated block                         hash=a636fe…fb55c5 recipients=0 duration=2562047h47m16.854s
+DEBUG[01-03|10:22:17.451] Reinjecting stale transactions           count=0
+TRACE[01-03|10:22:17.451] Announced block                          hash=a636fe…fb55c5 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:22:17.451] Removed old pending transaction          hash=c7a240…83ffb2
+INFO [01-03|10:22:17.452] Commit new mining work                   number=8 sealhash=6a5293…af04c2 uncles=0 txs=0 gas=0      fees=0       elapsed=488.176µs
+INFO [01-03|10:22:17.452] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:22:28.152] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:22:29.079] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:22:49.082] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:23:09.085] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:23:28.159] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:23:29.091] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:23:49.094] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:24:09.096] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:24:28.162] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:24:29.098] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:24:49.100] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:25:09.101] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:25:28.166] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:25:29.106] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:25:49.108] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:26:09.110] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:26:28.169] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:26:29.113] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:26:49.116] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:27:09.117] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:27:28.176] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:27:29.120] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:27:49.130] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:28:09.138] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:28:28.186] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+TRACE[01-03|10:28:29.048] Refreshing port mapping                  proto=tcp extport=62362 intport=62362 interface="UPNP IGDv1-IP1"
+DEBUG[01-03|10:28:29.146] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:28:49.154] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:29:09.165] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:29:28.192] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:29:29.166] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:29:49.172] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:30:09.180] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:30:28.201] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:30:29.183] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:30:49.188] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:31:09.196] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:31:28.213] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:31:29.206] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:31:49.214] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:32:09.203] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:32:28.189] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:32:29.201] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:32:49.201] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:33:09.209] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:33:28.217] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:33:29.241] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:33:49.259] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:34:33.078] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:34:52.067] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:34:53.096] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:35:13.106] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:35:56.936] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:36:15.908] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:36:16.940] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:36:36.948] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:37:20.777] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:37:39.737] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:37:40.789] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:38:24.621] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:38:44.631] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:39:03.576] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:39:04.638] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:39:48.456] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:40:08.468] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:40:27.398] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:40:28.472] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:41:12.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:41:32.312] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:41:51.235] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:44:55.681] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:45:15.691] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:45:35.697] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:45:54.034] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:45:55.699] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:46:15.704] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:46:35.708] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:46:54.041] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:46:55.714] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:47:15.716] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:47:35.718] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:47:54.048] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:47:55.722] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:48:15.725] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:48:35.727] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:48:54.053] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+TRACE[01-03|10:48:54.901] Refreshing port mapping                  proto=tcp extport=62362 intport=62362 interface="UPNP IGDv1-IP1"
+DEBUG[01-03|10:48:55.732] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:49:15.734] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:49:35.740] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:49:54.060] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:49:55.742] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:50:15.747] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:50:35.750] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:50:54.065] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:50:55.756] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:51:15.761] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:51:35.767] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:51:54.071] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:51:55.772] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:52:15.778] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:52:35.783] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:52:54.074] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:52:55.788] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:53:15.793] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:53:35.796] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:53:54.080] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:53:55.801] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:54:15.802] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:54:35.805] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:54:54.084] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:54:55.808] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:55:15.811] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:55:35.817] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:55:54.090] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:55:55.819] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:56:15.823] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:56:35.827] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:56:54.097] Current full block not old enough        number=7 hash=a636fe…fb55c5 delay=90000
+DEBUG[01-03|10:56:55.830] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:57:15.836] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:57:35.840] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|10:57:36.055] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T09-57-34.603996000Z--a70a9e0e2f8dcbe6d3c2884f195ea849a85180c8.tmp862160579
+DEBUG[01-03|10:57:36.055] FS scan times                            list=2.527855ms set=80.872µs  diff=4.799µs
+INFO [01-03|10:57:36.186] Your new key was generated               address=0xA70a9e0e2F8dcBE6d3C2884f195ea849A85180C8
+WARN [01-03|10:57:36.186] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T09-57-34.603996000Z--a70a9e0e2f8dcbe6d3c2884f195ea849a85180c8
+WARN [01-03|10:57:36.186] Please remember your password! 
+DEBUG[01-03|10:57:36.186] Served personal_newAccount               conn=127.0.0.1:62607 reqid=0 t=1.582692697s
+DEBUG[01-03|10:57:36.213] Served eth_coinbase                      conn=127.0.0.1:62607 reqid=1 t=33.9µs
+DEBUG[01-03|10:57:36.220] Executing EVM call finished              runtime=152.333µs
+DEBUG[01-03|10:57:36.220] Executing EVM call finished              runtime=74.47µs
+DEBUG[01-03|10:57:36.220] Executing EVM call finished              runtime=68.42µs
+DEBUG[01-03|10:57:36.220] Executing EVM call finished              runtime=80.799µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=68.777µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=76.792µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=99.038µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=73.656µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=70.184µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=74.98µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=70.991µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=64.402µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=63.627µs
+DEBUG[01-03|10:57:36.221] Executing EVM call finished              runtime=61.979µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=64.702µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=98.734µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=103.05µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=81.603µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=58.992µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=57.704µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=61.019µs
+DEBUG[01-03|10:57:36.222] Executing EVM call finished              runtime=56.673µs
+TRACE[01-03|10:57:36.222] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|10:57:36.701] FS scan times                            list=303.116µs  set=14.487µs  diff=5.458µs
+TRACE[01-03|10:57:36.701] Handled keystore changes                 time=63.234µs
+TRACE[01-03|10:57:37.076] Pooled new future transaction            hash=cbbb87…89f1b3 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0xA70a9e0e2F8dcBE6d3C2884f195ea849A85180C8
+TRACE[01-03|10:57:37.076] Promoting queued transaction             hash=cbbb87…89f1b3
+INFO [01-03|10:57:37.076] Submitted transaction                    fullhash=0xcbbb873c528a3ef6df68a988dfe37e6bc9b10a041d042fd6ca1ee80ddc89f1b3 recipient=0xA70a9e0e2F8dcBE6d3C2884f195ea849A85180C8
+DEBUG[01-03|10:57:37.076] Served personal_sendTransaction          conn=127.0.0.1:62607 reqid=2 t=856.674679ms
+TRACE[01-03|10:57:37.076] Broadcast transaction                    hash=cbbb87…89f1b3 recipients=0
+INFO [01-03|10:57:37.078] Commit new mining work                   number=8 sealhash=f6f358…d42ce7 uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=1.645ms
+TRACE[01-03|10:57:37.078] Waiting for slot to sign and propagate   delay=-78.271ms
+INFO [01-03|10:57:37.079] Successfully sealed new block            number=8 sealhash=f6f358…d42ce7 hash=2780c0…fb04e2 elapsed=1.046ms
+INFO [01-03|10:57:37.079] 🔗 block reached canonical chain          number=1 hash=d6212e…ba7158
+INFO [01-03|10:57:37.079] 🔨 mined potential block                  number=8 hash=2780c0…fb04e2
+DEBUG[01-03|10:57:37.079] Reinjecting stale transactions           count=0
+TRACE[01-03|10:57:37.079] Propagated block                         hash=2780c0…fb04e2 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|10:57:37.079] Removed old pending transaction          hash=cbbb87…89f1b3
+TRACE[01-03|10:57:37.079] Announced block                          hash=2780c0…fb04e2 recipients=0 duration=2562047h47m16.854s
+INFO [01-03|10:57:37.079] Commit new mining work                   number=9 sealhash=15320d…fbde5d uncles=0 txs=0 gas=0      fees=0       elapsed=428.444µs
+INFO [01-03|10:57:37.079] Sealing paused, waiting for transactions 
+DEBUG[01-03|10:57:54.101] Current full block not old enough        number=8 hash=2780c0…fb04e2 delay=90000
+DEBUG[01-03|10:57:55.846] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:58:15.851] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:58:35.852] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:58:54.103] Current full block not old enough        number=8 hash=2780c0…fb04e2 delay=90000
+DEBUG[01-03|10:58:55.854] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:59:15.855] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:59:35.858] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|10:59:54.109] Current full block not old enough        number=8 hash=2780c0…fb04e2 delay=90000
+DEBUG[01-03|10:59:55.862] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:00:15.868] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:00:35.869] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[01-03|11:00:36.735] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T10-00-35.311567000Z--21c0543bde72ee1f18bf13649f55c2dfa4e3e468.tmp213151046
+DEBUG[01-03|11:00:36.736] FS scan times                            list=298.698µs  set=114.197µs diff=8.059µs
+INFO [01-03|11:00:37.296] Your new key was generated               address=0x21C0543BDe72eE1f18Bf13649f55C2DfA4e3E468
+WARN [01-03|11:00:37.296] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T10-00-35.311567000Z--21c0543bde72ee1f18bf13649f55c2dfa4e3e468
+WARN [01-03|11:00:37.296] Please remember your password! 
+DEBUG[01-03|11:00:37.296] Served personal_newAccount               conn=127.0.0.1:62625 reqid=0 t=1.984946253s
+DEBUG[01-03|11:00:37.317] Served eth_coinbase                      conn=127.0.0.1:62625 reqid=1 t=26.467µs
+DEBUG[01-03|11:00:37.327] Executing EVM call finished              runtime=250.529µs
+DEBUG[01-03|11:00:37.327] Executing EVM call finished              runtime=200.608µs
+DEBUG[01-03|11:00:37.327] Executing EVM call finished              runtime=145.285µs
+DEBUG[01-03|11:00:37.327] Executing EVM call finished              runtime=127.424µs
+DEBUG[01-03|11:00:37.327] Executing EVM call finished              runtime=66.818µs
+DEBUG[01-03|11:00:37.328] Executing EVM call finished              runtime=199.538µs
+DEBUG[01-03|11:00:37.328] Executing EVM call finished              runtime=394.245µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=186.015µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=123.606µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=77.986µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=112.832µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=88.26µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=77.384µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=62.634µs
+DEBUG[01-03|11:00:37.329] Executing EVM call finished              runtime=108.656µs
+DEBUG[01-03|11:00:37.330] Executing EVM call finished              runtime=63.629µs
+DEBUG[01-03|11:00:37.330] Executing EVM call finished              runtime=77.796µs
+DEBUG[01-03|11:00:37.330] Executing EVM call finished              runtime=96.591µs
+DEBUG[01-03|11:00:37.330] Executing EVM call finished              runtime=140.217µs
+DEBUG[01-03|11:00:37.330] Executing EVM call finished              runtime=127.314µs
+DEBUG[01-03|11:00:37.330] Executing EVM call finished              runtime=106.844µs
+DEBUG[01-03|11:00:37.330] Executing EVM call finished              runtime=105.069µs
+TRACE[01-03|11:00:37.330] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|11:00:37.810] FS scan times                            list=198.946µs  set=12.959µs  diff=5.407µs
+TRACE[01-03|11:00:37.810] Handled keystore changes                 time=55.945µs
+TRACE[01-03|11:00:38.283] Pooled new future transaction            hash=2d2ae6…a7c245 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0x21C0543BDe72eE1f18Bf13649f55C2DfA4e3E468
+TRACE[01-03|11:00:38.284] Promoting queued transaction             hash=2d2ae6…a7c245
+TRACE[01-03|11:00:38.284] Broadcast transaction                    hash=2d2ae6…a7c245 recipients=0
+INFO [01-03|11:00:38.284] Submitted transaction                    fullhash=0x2d2ae6772e709e30e7bf5a195334304c84d20b2bcd1c1f329624793d02a7c245 recipient=0x21C0543BDe72eE1f18Bf13649f55C2DfA4e3E468
+DEBUG[01-03|11:00:38.284] Served personal_sendTransaction          conn=127.0.0.1:62625 reqid=2 t=958.071782ms
+INFO [01-03|11:00:38.284] Commit new mining work                   number=9 sealhash=93739a…c5ba69 uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=233.757µs
+TRACE[01-03|11:00:38.284] Waiting for slot to sign and propagate   delay=-284.423ms
+INFO [01-03|11:00:38.287] Successfully sealed new block            number=9 sealhash=93739a…c5ba69 hash=363bde…e83cb7 elapsed=2.944ms
+INFO [01-03|11:00:38.287] 🔗 block reached canonical chain          number=2 hash=4eb33c…dfe292
+INFO [01-03|11:00:38.287] 🔨 mined potential block                  number=9 hash=363bde…e83cb7
+DEBUG[01-03|11:00:38.287] Reinjecting stale transactions           count=0
+TRACE[01-03|11:00:38.287] Propagated block                         hash=363bde…e83cb7 recipients=0 duration=2562047h47m16.854s
+TRACE[01-03|11:00:38.287] Removed old pending transaction          hash=2d2ae6…a7c245
+TRACE[01-03|11:00:38.287] Announced block                          hash=363bde…e83cb7 recipients=0 duration=2562047h47m16.854s
+INFO [01-03|11:00:38.287] Commit new mining work                   number=10 sealhash=d9f6d4…f60862 uncles=0 txs=0 gas=0      fees=0       elapsed=512.965µs
+INFO [01-03|11:00:38.287] Sealing paused, waiting for transactions 
+DEBUG[01-03|11:00:54.115] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+DEBUG[01-03|11:00:55.875] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:01:15.876] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:01:35.878] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:01:54.123] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+DEBUG[01-03|11:01:55.882] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:02:15.887] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:02:35.878] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:02:54.103] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+DEBUG[01-03|11:02:55.873] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:03:15.871] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:03:35.871] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:03:54.105] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+TRACE[01-03|11:03:54.952] Refreshing port mapping                  proto=tcp extport=62362 intport=62362 interface="UPNP IGDv1-IP1"
+DEBUG[01-03|11:03:55.873] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:04:15.874] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:04:35.876] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:04:54.108] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+DEBUG[01-03|11:04:55.877] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:05:15.882] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:05:35.887] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:05:54.111] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+DEBUG[01-03|11:05:55.890] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:06:15.896] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:06:35.902] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:06:54.113] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+DEBUG[01-03|11:06:55.906] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:07:15.908] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:07:35.913] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:07:54.119] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+DEBUG[01-03|11:07:55.917] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:08:15.922] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:08:35.927] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:08:54.121] Current full block not old enough        number=9  hash=363bde…e83cb7 delay=90000
+TRACE[01-03|11:08:54.443] Ignoring file on account scan            path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/.UTC--2020-01-03T10-08-53.022520000Z--803398ceb90bdf47533f37ffcda4f4a51722530e.tmp269360621
+DEBUG[01-03|11:08:54.443] FS scan times                            list=239.542µs  set=91.682µs  diff=5.716µs
+INFO [01-03|11:08:54.673] Your new key was generated               address=0x803398Ceb90bdF47533f37fFcdA4f4A51722530E
+WARN [01-03|11:08:54.673] Please backup your key file!             path=/Users/josemiguelaragonjurado/Soundther/testNet/keystore/UTC--2020-01-03T10-08-53.022520000Z--803398ceb90bdf47533f37ffcda4f4a51722530e
+WARN [01-03|11:08:54.673] Please remember your password! 
+DEBUG[01-03|11:08:54.673] Served personal_newAccount               conn=127.0.0.1:62807 reqid=0 t=1.651444588s
+DEBUG[01-03|11:08:54.687] Served eth_coinbase                      conn=127.0.0.1:62807 reqid=1 t=34.53µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=118.804µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=80.659µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=75.648µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=58.588µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=52.652µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=61.596µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=118.856µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=83.673µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=64.505µs
+DEBUG[01-03|11:08:54.694] Executing EVM call finished              runtime=54.812µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=51.041µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=62.566µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=62.806µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=52.478µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=54.251µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=63.368µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=53.061µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=54.912µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=53.863µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=50.788µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=49.842µs
+DEBUG[01-03|11:08:54.695] Executing EVM call finished              runtime=49.664µs
+TRACE[01-03|11:08:54.695] Estimate gas usage automatically         gas=0x5208
+DEBUG[01-03|11:08:55.188] FS scan times                            list=260.952µs  set=14.619µs  diff=6.514µs
+TRACE[01-03|11:08:55.189] Handled keystore changes                 time=64.541µs
+TRACE[01-03|11:08:55.509] Pooled new future transaction            hash=8227ef…acf678 from=0x369e44d2968010cb7d2E3d93751b8B2e89E5f281 to=0x803398Ceb90bdF47533f37fFcdA4f4A51722530E
+TRACE[01-03|11:08:55.509] Promoting queued transaction             hash=8227ef…acf678
+TRACE[01-03|11:08:55.509] Broadcast transaction                    hash=8227ef…acf678 recipients=0
+INFO [01-03|11:08:55.509] Submitted transaction                    fullhash=0x8227eff7225cfcbcc05465075e6576b59938ad5ef8603eaeb091d4a5d5acf678 recipient=0x803398Ceb90bdF47533f37fFcdA4f4A51722530E
+DEBUG[01-03|11:08:55.509] Served personal_sendTransaction          conn=127.0.0.1:62807 reqid=2 t=816.062963ms
+INFO [01-03|11:08:55.509] Commit new mining work                   number=10 sealhash=c168e9…e209ff uncles=0 txs=1 gas=21000  fees=2.1e-14 elapsed=319.639µs
+TRACE[01-03|11:08:55.509] Waiting for slot to sign and propagate   delay=-509.758ms
+INFO [01-03|11:08:55.510] Successfully sealed new block            number=10 sealhash=c168e9…e209ff hash=b5744c…786388 elapsed=1.192ms
+INFO [01-03|11:08:55.510] 🔗 block reached canonical chain          number=3  hash=5a42b8…ef4828
+INFO [01-03|11:08:55.510] 🔨 mined potential block                  number=10 hash=b5744c…786388
+TRACE[01-03|11:08:55.510] Propagated block                         hash=b5744c…786388 recipients=0 duration=2562047h47m16.854s
+DEBUG[01-03|11:08:55.511] Reinjecting stale transactions           count=0
+TRACE[01-03|11:08:55.511] Removed old pending transaction          hash=8227ef…acf678
+TRACE[01-03|11:08:55.511] Announced block                          hash=b5744c…786388 recipients=0 duration=2562047h47m16.854s
+INFO [01-03|11:08:55.511] Commit new mining work                   number=11 sealhash=7150f8…8a321d uncles=0 txs=0 gas=0      fees=0       elapsed=847.855µs
+INFO [01-03|11:08:55.511] Sealing paused, waiting for transactions 
+DEBUG[01-03|11:08:55.930] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:09:15.932] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:09:35.937] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:09:54.128] Current full block not old enough        number=10 hash=b5744c…786388 delay=90000
+DEBUG[01-03|11:09:55.940] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:10:15.945] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:10:35.948] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:10:54.133] Current full block not old enough        number=10 hash=b5744c…786388 delay=90000
+DEBUG[01-03|11:10:55.949] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:11:15.951] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:11:35.953] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:11:54.136] Current full block not old enough        number=10 hash=b5744c…786388 delay=90000
+DEBUG[01-03|11:11:55.954] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[01-03|11:12:15.956] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
