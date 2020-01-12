@@ -42,3 +42,41 @@
 17:33:29.438411 db@open done T·35.267009ms
 17:33:33.328620 db@close closing
 17:33:33.328884 db@close done T·260.727µs
+=============== Jan 12, 2020 (CET) ===============
+20:14:51.814595 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:14:51.814977 version@stat F·[3] S·494B[494B] Sc·[0.75]
+20:14:51.815006 db@open opening
+20:14:51.815071 journal@recovery F·2
+20:14:51.815917 journal@recovery recovering @9
+20:14:51.816009 journal@recovery recovering @19
+20:14:51.844879 memdb@flush created L0@20 N·1 S·159B "loc..seq,v8":"loc..seq,v8"
+20:14:51.844910 version@stat F·[4] S·653B[653B] Sc·[1.00]
+20:14:51.938543 memdb@flush created L0@22 N·1 S·159B "loc..seq,v14":"loc..seq,v14"
+20:14:51.939498 version@stat F·[5] S·812B[812B] Sc·[1.25]
+20:14:51.972776 db@janitor F·11 G·4
+20:14:51.972807 db@janitor removing table-15
+20:14:51.972903 db@janitor removing manifest-20
+20:14:51.972980 db@janitor removing table-18
+20:14:51.973184 db@janitor removing table-14
+20:14:51.973325 db@open done T·158.307257ms
+20:14:51.973436 table@compaction L0·5 -> L1·0 S·812B Q·15
+20:14:51.998207 table@build created L1@24 N·2 S·176B "loc..seq,v14":"version,v1"
+20:14:51.998332 version@stat F·[0 1] S·176B[0B 176B] Sc·[0.00 0.00]
+20:14:52.048807 table@compaction committed F-4 S-636B Ke·0 D·4 T·75.301304ms
+20:14:52.048986 table@remove removed @22
+20:14:52.049044 table@remove removed @8
+20:14:52.049106 table@remove removed @5
+20:14:52.049134 table@remove removed @2
+20:14:57.886830 db@close closing
+20:14:57.887064 db@close done T·228.119µs
+=============== Jan 12, 2020 (CET) ===============
+20:15:09.274038 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:15:09.274411 version@stat F·[0 1] S·176B[0B 176B] Sc·[0.00 0.00]
+20:15:09.274452 db@open opening
+20:15:09.275181 journal@recovery F·1
+20:15:09.276411 journal@recovery recovering @23
+20:15:09.308966 memdb@flush created L0@25 N·1 S·159B "loc..seq,v16":"loc..seq,v16"
+20:15:09.309640 version@stat F·[1 1] S·335B[159B 176B] Sc·[0.25 0.00]
+20:15:09.394218 db@janitor F·5 G·1
+20:15:09.394249 db@janitor removing table-20
+20:15:09.394376 db@open done T·119.908401ms
