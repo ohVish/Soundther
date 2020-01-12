@@ -3,7 +3,11 @@
 start: 
 	./Soundther.sh
 dependencies:
-	go get fyne.io/fyne/cmd/fyne
+	sudo apt-get install libegl1-mesa-dev
+	sudo apt-get install xorg-dev
+	sudo apt-get update              
+	sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+	go get fyne.io/fyne
 	python3 -m pip install numpy
 	python3 -m pip install scipy
 	python3 -m pip install web3
