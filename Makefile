@@ -1,6 +1,5 @@
 # Makefile que permite la instalación de las dependencias de la aplicación.
 
-TERMINAL=~/.bashrc
 start: 
 	./Soundther.sh
 dependencies:
@@ -17,8 +16,8 @@ python3:
 	sudo add-apt-repository ppa:deadsnakes/ppa
 	sudo apt update
 	sudo apt install python3.7
-	sudo echo 'alias python3=python' >> $(TERMINAL)
 common:
+	sudo apt-get
 	sudo apt-get install software-properties-common
 	sudo add-apt-repository -y ppa:ethereum/ethereum
 	sudo apt-get update
