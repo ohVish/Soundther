@@ -1,5 +1,6 @@
 #!/bin/bash
-cd /Users/josemiguelaragonjurado/Soundther/
+cd /Users/josemiguelaragonjurado/Soundther
+go build
 cmd="./soundther"
 $cmd &
 cd ./blockchain/
