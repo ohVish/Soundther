@@ -1,5 +1,4 @@
 #!/bin/bash
-cd /Users/josemiguelaragonjurado/Soundther
 go build
 cmd="./soundther"
 $cmd &
