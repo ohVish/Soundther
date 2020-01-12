@@ -17,7 +17,7 @@ python3:
 	sudo apt update
 	sudo apt install python3.7
 common:
-	sudo apt-get
+	sudo apt-get update
 	sudo apt-get install software-properties-common
 	sudo add-apt-repository -y ppa:ethereum/ethereum
 	sudo apt-get update
