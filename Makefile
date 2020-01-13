@@ -2,7 +2,7 @@
 
 start: 
 	./Soundther.sh
-dependencies:
+install:
 	sudo apt-get install libegl1-mesa-dev
 	sudo apt-get install xorg-dev
 	sudo apt-get update              
@@ -26,3 +26,5 @@ common:
 	sudo add-apt-repository -y ppa:ethereum/ethereum
 	sudo apt-get update
 	sudo apt-get install ethereum
+
+.PHONY start install go python3 common
