@@ -2,7 +2,7 @@
 
 start: 
 	./Soundther.sh
-install:
+install: python3 go
 	sudo apt-get install libegl1-mesa-dev
 	sudo apt-get install xorg-dev
 	sudo apt-get update              
@@ -12,11 +12,11 @@ install:
 	python3 -m pip install scipy
 	python3 -m pip install web3
 	python3 -m pip install tqdm
-go:
+go: common
 	sudo add-apt-repository ppa:longsleep/golang-backports
 	sudo apt-get update
 	sudo apt-get install golang-go
-python3:
+python3: common
 	sudo add-apt-repository ppa:deadsnakes/ppa
 	sudo apt update
 	sudo apt install python3.7
@@ -27,4 +27,4 @@ common:
 	sudo apt-get update
 	sudo apt-get install ethereum
 
-.PHONY start install go python3 common
+.PHONY: start install go python3 common
