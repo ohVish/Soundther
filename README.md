@@ -1,4 +1,8 @@
-# Soundther
+# Soundther 
+
+<img src="https://github.com/ohVish/Soundther/blob/master/icon.png" width=200>  
+Aplicación para subir y descargar ficheros de audio de la blockchain.  
+
 ## Prerrequisitos
 Los prerrequisitos necesarios para utilizar la aplicación de subida y descarga de ficheros de audio, *Soundther*, son:
 * **Compilador GCC en su versión 9.2.**
@@ -31,33 +35,16 @@ Una vez realizada la descarga de la aplicación, podemos realizar fácilmente la
 * `make start`: Ejecuta un script para poner en marcha la aplicación y empezar a utilizarla.
 
 Para una sencilla instalación simplemente con la orden `make install` del makefile instalará todo lo necesario para ejecutar la aplicación. Una vez ejecutada la orden `make start`, se mostrará interfaz de usuario inicial. La interfaz se compone principalmente de cuatro vistas principales, que se encuentran en la barra vertical que se encuentra a la izquierda de la aplicación en todo momento:
+
 * La vista inicial, que es la que veremos al iniciar la aplicación, es meramente introductoria y tiene una leve descripción de la funcionalidad de la aplicación como vemos en la Figura \ref{fig:interf_inicio}.
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.25]{images/inicio.png}
-        \caption{Vista inicial}
-        \label{fig:interf_inicio}
-    \end{figure}
+![Vista inicial](https://github.com/ohVish/Soundther/blob/master/pictures/inicio.png)
+
 * La vista con la funcionalidad para subir archivos de audio. Al principio, nos pedirá el nombre de usuario que tenemos en la aplicación registrado y a su vez, este tiene asociado una cartera en la blockchain.
-    Una vez entremos, lo siguiente que vemos se nos muestra es el saldo disponible en nuestra cuenta junto con el nombre de nuestro archivo de audio, la duración que va a tener en el caso que queramos grabarlo y el precio al que queremos vender nuestro archivo de audio como vemos en la Figura \ref{fig:interf_subir}. Se nos permite grabar nuestro audio o subir uno que ya tengamos. La siguiente pantalla es para confirmar que queramos subir ese audio, permitiéndonos la reproducción del mismo. Una vez confirmamos, se realizará el contrato y se subirá el archivo de audio a la blockchain.
-     \begin{figure}[!h]
-    \centering
-    \includegraphics[scale=0.25]{images/subir.png}
-    \caption{Vista al subir un archivo}
-    \label{fig:interf_subir}
-    \end{figure}
-* La vista con la funcionalidad de descargar archivos de audio. De forma similar a la vista anterior, al principio nos pedirá el nombre de usuario que tenemos registrado en la aplicación. Posteriormente, se muestra nuestro saldo y una lista con todas los archivos de audio que podemos comprar como vemos en la Figura \ref{fig:interf_descargar}. Una vez seleccionemos el que queramos,se cargará el cobro a nuestra cartera y se descargará de la blockchain.
-    \begin{figure}[!h]
-    \centering
-    \includegraphics[scale=0.25]{images/descargar.png}
-    \caption{Vista al descargar un archivo}
-    \label{fig:interf_descargar}
-    \end{figure}
-* La última vista es simplemente un reproductor de audio, para que todos los archivos de audio comprados, se puedan reproducir desde la misma aplicación como vemos en la Figura \ref{fig:interf_repr}.
-    \begin{figure}[!h]
-    \centering
-    \includegraphics[scale=0.25]{images/reproducir.png}
-    \caption{Vista al descargar un archivo}
-    \label{fig:interf_repr}
-    \end{figure}
-\end{itemize}
+Una vez entremos, lo siguiente que vemos se nos muestra es el saldo disponible en nuestra cuenta junto con el nombre de nuestro archivo de audio, la duración que va a tener en el caso que queramos grabarlo y el precio al que queremos vender nuestro archivo de audio. Se nos permite grabar nuestro audio o subir uno que ya tengamos. La siguiente pantalla es para confirmar que queramos subir ese audio, permitiéndonos la reproducción del mismo. Una vez confirmamos, se realizará el contrato y se subirá el archivo de audio a la blockchain.
+![Vista de subida](https://github.com/ohVish/Soundther/blob/master/pictures/subir.png)
+
+* La vista con la funcionalidad de descargar archivos de audio. De forma similar a la vista anterior, al principio nos pedirá el nombre de usuario que tenemos registrado en la aplicación. Posteriormente, se muestra nuestro saldo y una lista con todas los archivos de audio que podemos comprar. Una vez seleccionemos el que queramos,se cargará el cobro a nuestra cartera y se descargará de la blockchain.
+![Vista de compra](https://github.com/ohVish/Soundther/blob/master/pictures/descargar.png)
+
+* La última vista es simplemente un reproductor de audio, para que todos los archivos de audio comprados, se puedan reproducir desde la misma aplicación.
+![Vista de reproducción](https://github.com/ohVish/Soundther/blob/master/pictures/descargar.png)
