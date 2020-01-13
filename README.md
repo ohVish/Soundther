@@ -1,4 +1,8 @@
-# Soundther
+# Soundther 
+
+<img src="https://github.com/ohVish/Soundther/blob/master/icon.png" width=200>  
+Aplicación para subir y descargar ficheros de audio de la blockchain.  
+
 ## Prerrequisitos
 Los prerrequisitos necesarios para utilizar la aplicación de subida y descarga de ficheros de audio, *Soundther*, son:
 * **Compilador GCC en su versión 9.2.**
