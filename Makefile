@@ -26,5 +26,7 @@ common:
 	sudo add-apt-repository -y ppa:ethereum/ethereum
 	sudo apt-get update
 	sudo apt-get install ethereum
+	sudo apt-get update -y
+	sudo apt-get install -y sox
 
 .PHONY: start install go python3 common
