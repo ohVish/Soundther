@@ -36,7 +36,7 @@ Una vez realizada la descarga de la aplicación, podemos realizar fácilmente la
 
 Para una sencilla instalación simplemente con la orden `make install` del makefile instalará todo lo necesario para ejecutar la aplicación. Una vez ejecutada la orden `make start`, se mostrará interfaz de usuario inicial. La interfaz se compone principalmente de cuatro vistas principales, que se encuentran en la barra vertical que se encuentra a la izquierda de la aplicación en todo momento:
 
-* La vista inicial, que es la que veremos al iniciar la aplicación, es meramente introductoria y tiene una leve descripción de la funcionalidad de la aplicación como vemos en la Figura \ref{fig:interf_inicio}.
+* La vista inicial, que es la que veremos al iniciar la aplicación, es meramente introductoria y tiene una leve descripción de la funcionalidad de la aplicación.
 ![Vista inicial](https://github.com/ohVish/Soundther/blob/master/pictures/inicio.png)
 
 * La vista con la funcionalidad para subir archivos de audio. Al principio, nos pedirá el nombre de usuario que tenemos en la aplicación registrado y a su vez, este tiene asociado una cartera en la blockchain.
