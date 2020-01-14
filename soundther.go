@@ -304,7 +304,8 @@ func listTransactions() fyne.CanvasObject {
 			layout.NewSpacer()),
 		group,
 		layout.NewSpacer(),
-		widget.NewHBox(widget.NewButtonWithIcon("Volver", theme.CancelIcon(), func() {
+		widget.NewHBox(
+			widget.NewButtonWithIcon("Volver", theme.CancelIcon(), func() {
 			initUI(2)
 		}),
 			layout.NewSpacer(),
